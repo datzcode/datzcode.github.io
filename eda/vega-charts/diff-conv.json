@@ -1,0 +1,867 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "title": {"text": "Diffusion & Convergence", "frame": "group"},
+  "style": "cell",
+  "height": 600,
+  "signals": [
+    {
+      "name": "width",
+      "init": "isFinite(containerSize()[0]) ? containerSize()[0] : 300",
+      "on": [
+        {
+          "update": "isFinite(containerSize()[0]) ? containerSize()[0] : 300",
+          "events": "window:resize"
+        }
+      ]
+    }
+  ],
+  "data": [
+    {
+      "name": "data-ea7c5a4a6d40dd55bc8f13aafe9c1a3f",
+      "values": [
+        {
+          "idx": 0,
+          "diffusion_info": 0.8615434639813508,
+          "convergence_info": 0.10831603990299139,
+          "aircraft": "MACCHI C.202"
+        },
+        {
+          "idx": 1,
+          "diffusion_info": 0.7482662206661267,
+          "convergence_info": 0.07856144527040183,
+          "aircraft": "YAKOVLEK YAK-1"
+        },
+        {
+          "idx": 2,
+          "diffusion_info": 0.7288658598029409,
+          "convergence_info": 0.09950375224260527,
+          "aircraft": "P-51 MUSTANG"
+        },
+        {
+          "idx": 3,
+          "diffusion_info": 0.7317306375460896,
+          "convergence_info": 0.14725922550619255,
+          "aircraft": "FAIREY FULMAR"
+        },
+        {
+          "idx": 4,
+          "diffusion_info": 0.7295928499611815,
+          "convergence_info": 0.09177141441589258,
+          "aircraft": "CURTISS XP-46"
+        },
+        {
+          "idx": 5,
+          "diffusion_info": 0.8418652665959084,
+          "convergence_info": 0.06551564037871256,
+          "aircraft": "REGGIANE RE.2001"
+        },
+        {
+          "idx": 6,
+          "diffusion_info": 0.45834020326890706,
+          "convergence_info": 0.14288482057284757,
+          "aircraft": "MESSECHMITT ME262"
+        },
+        {
+          "idx": 7,
+          "diffusion_info": 0.6573316172327763,
+          "convergence_info": 0.09209411684916802,
+          "aircraft": "LAVOCHKIN La-5"
+        },
+        {
+          "idx": 8,
+          "diffusion_info": 0.7652654458974926,
+          "convergence_info": 0.11640551888838647,
+          "aircraft": "BELL P-63 KINGCOBRA"
+        },
+        {
+          "idx": 9,
+          "diffusion_info": 0.6931295113160394,
+          "convergence_info": 0.08698718922350517,
+          "aircraft": "CAC BOOMERANG"
+        },
+        {
+          "idx": 10,
+          "diffusion_info": 0.685977005530264,
+          "convergence_info": 0.08664193981081048,
+          "aircraft": "NAKAJIMA Ki-84"
+        },
+        {
+          "idx": 11,
+          "diffusion_info": 0.7683482817155443,
+          "convergence_info": 0.18324528684394728,
+          "aircraft": "KAWASAKI KI-102"
+        },
+        {
+          "idx": 12,
+          "diffusion_info": 0.6256663926279388,
+          "convergence_info": 0.08488106666382493,
+          "aircraft": "GRUMMAN F8F BEARCAT"
+        },
+        {
+          "idx": 13,
+          "diffusion_info": 0.38410526606988366,
+          "convergence_info": 0.20674233952711105,
+          "aircraft": "MCDONNELL FH PHANTOM"
+        },
+        {
+          "idx": 14,
+          "diffusion_info": 0.7222008432733393,
+          "convergence_info": 0.12484445868606817,
+          "aircraft": "SUPREMARINE SEAFANG"
+        },
+        {
+          "idx": 15,
+          "diffusion_info": 0.48549381174226436,
+          "convergence_info": 0.2119220458124651,
+          "aircraft": "MiG-15"
+        },
+        {
+          "idx": 16,
+          "diffusion_info": 0.6683702658134544,
+          "convergence_info": 0.16082272913745968,
+          "aircraft": "BLACKBURN B-48 FIRECREST"
+        },
+        {
+          "idx": 17,
+          "diffusion_info": 0.39203740895532907,
+          "convergence_info": 0.17781958667681183,
+          "aircraft": "F-86 SABRE"
+        },
+        {
+          "idx": 18,
+          "diffusion_info": 0.4288774091166823,
+          "convergence_info": 0.15633743674007308,
+          "aircraft": "SAAB 29 TUNNAN"
+        },
+        {
+          "idx": 19,
+          "diffusion_info": 0.4654306345994596,
+          "convergence_info": 0.1442207097506855,
+          "aircraft": "DASSAULT MD450 OURAGAN"
+        },
+        {
+          "idx": 20,
+          "diffusion_info": 0.4496541929405499,
+          "convergence_info": 0.23623116811191364,
+          "aircraft": "MIKOYAN GUREVICH MiG-17"
+        },
+        {
+          "idx": 21,
+          "diffusion_info": 0.16120629553695337,
+          "convergence_info": 0.3422279652677953,
+          "aircraft": "HAWKER HUNTER"
+        },
+        {
+          "idx": 22,
+          "diffusion_info": 0.26870748472145567,
+          "convergence_info": 0.5356168782161949,
+          "aircraft": "DH.110 SEA VIXEN"
+        },
+        {
+          "idx": 23,
+          "diffusion_info": 0.15545420831534998,
+          "convergence_info": 0.43975355662445204,
+          "aircraft": "DOUGLAS F4D (F6)SKYRAY"
+        },
+        {
+          "idx": 24,
+          "diffusion_info": 0.37768206663941456,
+          "convergence_info": 0.1929641965367533,
+          "aircraft": "YAKOVLEV YAK-25"
+        },
+        {
+          "idx": 25,
+          "diffusion_info": 0.14050893161820968,
+          "convergence_info": 0.4442560158010067,
+          "aircraft": "CONVAIR F-102 DELTA DRAGGER"
+        },
+        {
+          "idx": 26,
+          "diffusion_info": 0.2689996234334067,
+          "convergence_info": 0.4297740696948834,
+          "aircraft": "ENGLISH ELECTRIC LIGHTING"
+        },
+        {
+          "idx": 27,
+          "diffusion_info": 0.16732148507302813,
+          "convergence_info": 0.2969502043425906,
+          "aircraft": "VOUGHT F-8 CRUSADER"
+        },
+        {
+          "idx": 28,
+          "diffusion_info": 0.14843685517647318,
+          "convergence_info": 0.5447970319967131,
+          "aircraft": "REPUBLIC F-105 THUNDERCHIEF"
+        },
+        {
+          "idx": 29,
+          "diffusion_info": 0.3990766226485729,
+          "convergence_info": 0.35416231821991556,
+          "aircraft": "FOLLAND GNAT"
+        },
+        {
+          "idx": 30,
+          "diffusion_info": 0.34360578259942987,
+          "convergence_info": 0.22730307181096632,
+          "aircraft": "DASSAULT SUPER MYSTÈRE"
+        },
+        {
+          "idx": 31,
+          "diffusion_info": 0.1498314619303836,
+          "convergence_info": 0.45807233307533574,
+          "aircraft": "SAAB 35 DRAKEN"
+        },
+        {
+          "idx": 32,
+          "diffusion_info": 0.14671478572679642,
+          "convergence_info": 0.4215518580622466,
+          "aircraft": "LOCKHEED F-104 STARFIGHTER"
+        },
+        {
+          "idx": 33,
+          "diffusion_info": 0.34178315901237677,
+          "convergence_info": 0.19272975213160423,
+          "aircraft": "FIAT G.91"
+        },
+        {
+          "idx": 34,
+          "diffusion_info": 0.33056310932597455,
+          "convergence_info": 0.35069403512608377,
+          "aircraft": "MiG-21"
+        },
+        {
+          "idx": 35,
+          "diffusion_info": 0.5121621157505277,
+          "convergence_info": 0.3501504525601116,
+          "aircraft": "SAUNDERS ROE SR53"
+        },
+        {
+          "idx": 36,
+          "diffusion_info": 0.24574000896915876,
+          "convergence_info": 0.26238502124853386,
+          "aircraft": "YAK-28"
+        },
+        {
+          "idx": 37,
+          "diffusion_info": 0.32346623574361427,
+          "convergence_info": 0.3834476074989335,
+          "aircraft": "SUKHOI SU-11"
+        },
+        {
+          "idx": 38,
+          "diffusion_info": 0.14343449382034124,
+          "convergence_info": 0.47615740884889135,
+          "aircraft": "MCDONNELL DOUGLASS F4 PHANTOM II"
+        },
+        {
+          "idx": 39,
+          "diffusion_info": 0.21319725476003265,
+          "convergence_info": 0.5952110962131819,
+          "aircraft": "AVRO CANADA CF-105 ARROW"
+        },
+        {
+          "idx": 40,
+          "diffusion_info": 0.2496956736085046,
+          "convergence_info": 0.30333939073334704,
+          "aircraft": "NORTHROP F-5"
+        },
+        {
+          "idx": 41,
+          "diffusion_info": 0.32165499240847495,
+          "convergence_info": 0.6380498635012534,
+          "aircraft": "TUPOLEV TU-28"
+        },
+        {
+          "idx": 42,
+          "diffusion_info": 0.2142297400070782,
+          "convergence_info": 0.2760368450627411,
+          "aircraft": "HAL HF-24 MARUT"
+        },
+        {
+          "idx": 43,
+          "diffusion_info": 0.12933966554764145,
+          "convergence_info": 0.4147339992036135,
+          "aircraft": "SUKHOI SU-15"
+        },
+        {
+          "idx": 44,
+          "diffusion_info": 0.4494822665294451,
+          "convergence_info": 0.5885294407081876,
+          "aircraft": "LOCKHEED YF-12"
+        },
+        {
+          "idx": 45,
+          "diffusion_info": 0.27477386791493175,
+          "convergence_info": 0.539691856230229,
+          "aircraft": "MiG-25"
+        },
+        {
+          "idx": 46,
+          "diffusion_info": 0.4141764475953991,
+          "convergence_info": 0.517288504695034,
+          "aircraft": "HELWAN HA-300"
+        },
+        {
+          "idx": 47,
+          "diffusion_info": 0.2910505673915483,
+          "convergence_info": 0.4978502735865837,
+          "aircraft": "F-111B"
+        },
+        {
+          "idx": 48,
+          "diffusion_info": 0.28216288426391767,
+          "convergence_info": 0.2583342008877592,
+          "aircraft": "FIAT G.91Y"
+        },
+        {
+          "idx": 49,
+          "diffusion_info": 0.14253000074856645,
+          "convergence_info": 0.3294447912413029,
+          "aircraft": "DASSAULT MIRAGE F1"
+        },
+        {
+          "idx": 50,
+          "diffusion_info": 0.15006845647087555,
+          "convergence_info": 0.32033037926854446,
+          "aircraft": "SAAB JA37 VIGGEN"
+        },
+        {
+          "idx": 51,
+          "diffusion_info": 0.12991253877893674,
+          "convergence_info": 0.3577622483282574,
+          "aircraft": "MiG-23"
+        },
+        {
+          "idx": 52,
+          "diffusion_info": 0.15376811829486087,
+          "convergence_info": 0.35577241832883655,
+          "aircraft": "HARRIER GR3"
+        },
+        {
+          "idx": 53,
+          "diffusion_info": 0.26804041078092367,
+          "convergence_info": 0.27974063025532975,
+          "aircraft": "CANADAIR CF-5 FREEDOM FIGHTER (CF-116)"
+        },
+        {
+          "idx": 54,
+          "diffusion_info": 0.13514837582848319,
+          "convergence_info": 0.41441808776274863,
+          "aircraft": "SHENYANG J-8"
+        },
+        {
+          "idx": 55,
+          "diffusion_info": 0.5677075865188717,
+          "convergence_info": 0.45402247439913357,
+          "aircraft": "NANCHANG J-12"
+        },
+        {
+          "idx": 56,
+          "diffusion_info": 0.1989735292834332,
+          "convergence_info": 0.5180858547942243,
+          "aircraft": "F-14 TOMCAT"
+        },
+        {
+          "idx": 57,
+          "diffusion_info": 0.1485906511291474,
+          "convergence_info": 0.4055191594327161,
+          "aircraft": "YAKOVLEV YAK-38"
+        },
+        {
+          "idx": 58,
+          "diffusion_info": 0.10838010865320644,
+          "convergence_info": 0.4492235768878909,
+          "aircraft": "F-15 EAGLE"
+        },
+        {
+          "idx": 59,
+          "diffusion_info": 0.11447055733859628,
+          "convergence_info": 0.32098652531328625,
+          "aircraft": "IAI KFIR"
+        },
+        {
+          "idx": 60,
+          "diffusion_info": 0.13200736273745678,
+          "convergence_info": 0.358146281535657,
+          "aircraft": "F-16 FIGHTING FALCON"
+        },
+        {
+          "idx": 61,
+          "diffusion_info": 0.13894627014031705,
+          "convergence_info": 0.4069934675707194,
+          "aircraft": "NORTHROP YF-17"
+        },
+        {
+          "idx": 62,
+          "diffusion_info": 0.14968510557754588,
+          "convergence_info": 0.22845108708059325,
+          "aircraft": "DASSAULT-BREGUET SUPER ÉTENDARD"
+        },
+        {
+          "idx": 63,
+          "diffusion_info": 0.17961447641751763,
+          "convergence_info": 0.4960219178649778,
+          "aircraft": "MIG-31"
+        },
+        {
+          "idx": 64,
+          "diffusion_info": 0.14890361537207045,
+          "convergence_info": 0.25770968526179283,
+          "aircraft": "MITSUBISHI F-1"
+        },
+        {
+          "idx": 65,
+          "diffusion_info": 0.4228556505256032,
+          "convergence_info": 0.359352433582299,
+          "aircraft": "HAL AJEET"
+        },
+        {
+          "idx": 66,
+          "diffusion_info": 0.09553362224074494,
+          "convergence_info": 0.3095624838629994,
+          "aircraft": "MIG-29"
+        },
+        {
+          "idx": 67,
+          "diffusion_info": 0.09445087151073531,
+          "convergence_info": 0.3647186583283053,
+          "aircraft": "SUKHOI SU-27"
+        },
+        {
+          "idx": 68,
+          "diffusion_info": 0.09553175608387726,
+          "convergence_info": 0.3562063712647383,
+          "aircraft": "F/A-18 HORNET"
+        },
+        {
+          "idx": 69,
+          "diffusion_info": 0.15125677253096004,
+          "convergence_info": 0.29494143758904084,
+          "aircraft": "SEA HARRIER"
+        },
+        {
+          "idx": 70,
+          "diffusion_info": 0.1107124246326791,
+          "convergence_info": 0.3025221488905782,
+          "aircraft": "DASSAULT MIRAGE 2000"
+        },
+        {
+          "idx": 71,
+          "diffusion_info": 0.14866042712837962,
+          "convergence_info": 0.3711216929467943,
+          "aircraft": "CF-18 HORNET"
+        },
+        {
+          "idx": 72,
+          "diffusion_info": 0.1438765159193049,
+          "convergence_info": 0.36661213187885655,
+          "aircraft": "PANAVIA TORNADO"
+        },
+        {
+          "idx": 73,
+          "diffusion_info": 0.10434399422668861,
+          "convergence_info": 0.38778524976213113,
+          "aircraft": "MISTUBISHI F-15J"
+        },
+        {
+          "idx": 74,
+          "diffusion_info": 0.19651237679998435,
+          "convergence_info": 0.35451991900468677,
+          "aircraft": "F-20 TIGERSHARK"
+        },
+        {
+          "idx": 75,
+          "diffusion_info": 0.12496829691476333,
+          "convergence_info": 0.3278536904793463,
+          "aircraft": "F-16XL"
+        },
+        {
+          "idx": 76,
+          "diffusion_info": 0.08806489051522591,
+          "convergence_info": 0.26019865448304924,
+          "aircraft": "MIG-29M"
+        },
+        {
+          "idx": 77,
+          "diffusion_info": 0.25639770371102366,
+          "convergence_info": 0.3681882639461793,
+          "aircraft": "BRITISH AEROSPACE HARRIER  II"
+        },
+        {
+          "idx": 78,
+          "diffusion_info": 0.13441584632118422,
+          "convergence_info": 0.29837577179520075,
+          "aircraft": "IAI LAVI"
+        },
+        {
+          "idx": 79,
+          "diffusion_info": 0.12238150045502004,
+          "convergence_info": 0.37821968925795735,
+          "aircraft": "F-15E STRIKE EAGLE"
+        },
+        {
+          "idx": 80,
+          "diffusion_info": 0.2157756001293058,
+          "convergence_info": 0.3186061007241075,
+          "aircraft": "DASSAULT RAFALE"
+        },
+        {
+          "idx": 81,
+          "diffusion_info": 0.15108856128257256,
+          "convergence_info": 0.30731012666902613,
+          "aircraft": "ATLAS CHEETAH"
+        },
+        {
+          "idx": 82,
+          "diffusion_info": 0.08297615961244459,
+          "convergence_info": 0.3095704183535823,
+          "aircraft": "YAKOVLEV YAK-141"
+        },
+        {
+          "idx": 83,
+          "diffusion_info": 0.11013184680615219,
+          "convergence_info": 0.3534591926721978,
+          "aircraft": "SUKHOI SU-33"
+        },
+        {
+          "idx": 84,
+          "diffusion_info": 0.09222393064023673,
+          "convergence_info": 0.24987372659746418,
+          "aircraft": "MIG-29K"
+        },
+        {
+          "idx": 85,
+          "diffusion_info": 0.14053763357830987,
+          "convergence_info": 0.3023389820961848,
+          "aircraft": "SAAB JAS 39 GRIPEN"
+        },
+        {
+          "idx": 86,
+          "diffusion_info": 0.11216423018120009,
+          "convergence_info": 0.33194205429014895,
+          "aircraft": "XIAN JH-7"
+        },
+        {
+          "idx": 87,
+          "diffusion_info": 0.09478869964516111,
+          "convergence_info": 0.30463877553216995,
+          "aircraft": "SUKHOI SU-30"
+        },
+        {
+          "idx": 88,
+          "diffusion_info": 0.1451638130482509,
+          "convergence_info": 0.3201789615875687,
+          "aircraft": "AIDC F-CK-1 CHING-KUO"
+        },
+        {
+          "idx": 89,
+          "diffusion_info": 0.10003983902355285,
+          "convergence_info": 0.37463451133414377,
+          "aircraft": "YF-22"
+        },
+        {
+          "idx": 90,
+          "diffusion_info": 0.08715162432888404,
+          "convergence_info": 0.2921623257270226,
+          "aircraft": "EUROFIGHTER TYPHOON"
+        },
+        {
+          "idx": 91,
+          "diffusion_info": 0.11982194357773672,
+          "convergence_info": 0.3396169116041284,
+          "aircraft": "F/A-18E/F SUPER HORNET"
+        },
+        {
+          "idx": 92,
+          "diffusion_info": 0.1143206956563865,
+          "convergence_info": 0.2526259794578319,
+          "aircraft": "MITSUBISHI F-2"
+        },
+        {
+          "idx": 93,
+          "diffusion_info": 0.09239336532106948,
+          "convergence_info": 0.33327619401844194,
+          "aircraft": "SUKHOI SU-37"
+        },
+        {
+          "idx": 94,
+          "diffusion_info": 0.10723905787142576,
+          "convergence_info": 0.37966593489060674,
+          "aircraft": "F-22 RAPTOR"
+        },
+        {
+          "idx": 95,
+          "diffusion_info": 0.11240214349171374,
+          "convergence_info": 0.36330217624906397,
+          "aircraft": "SUKHOI SU-47"
+        },
+        {
+          "idx": 96,
+          "diffusion_info": 0.28221231023700033,
+          "convergence_info": 0.23258361076369793,
+          "aircraft": "AERO L-159 ALCA"
+        },
+        {
+          "idx": 97,
+          "diffusion_info": 0.10678074200949417,
+          "convergence_info": 0.30552242938405716,
+          "aircraft": "SUKHOI SU-30MKI"
+        },
+        {
+          "idx": 98,
+          "diffusion_info": 0.11924066862085819,
+          "convergence_info": 0.292425231677404,
+          "aircraft": "CHENGDU J-10"
+        },
+        {
+          "idx": 99,
+          "diffusion_info": 0.07847335943544474,
+          "convergence_info": 0.28559474491615316,
+          "aircraft": "SHENYANG J-11"
+        },
+        {
+          "idx": 100,
+          "diffusion_info": 0.1338742291666581,
+          "convergence_info": 0.2899415322391651,
+          "aircraft": "HAL TEJAS"
+        },
+        {
+          "idx": 101,
+          "diffusion_info": 0.18664459507296657,
+          "convergence_info": 0.2631146196401024,
+          "aircraft": "PAC JF-17 THUNDER"
+        },
+        {
+          "idx": 102,
+          "diffusion_info": 0.07293913648470005,
+          "convergence_info": 0.3342701373573562,
+          "aircraft": "F-35 LIGHTNING II"
+        },
+        {
+          "idx": 103,
+          "diffusion_info": 0.0685643124607927,
+          "convergence_info": 0.24437957099660676,
+          "aircraft": "MIG-35"
+        },
+        {
+          "idx": 104,
+          "diffusion_info": 0.058409032027547436,
+          "convergence_info": 0.30681573493916686,
+          "aircraft": "SUKHOI SU-35"
+        },
+        {
+          "idx": 105,
+          "diffusion_info": 0.04865722554331861,
+          "convergence_info": 0.24732357144273548,
+          "aircraft": "SHENYANG J-15"
+        },
+        {
+          "idx": 106,
+          "diffusion_info": 0.07712089648840545,
+          "convergence_info": 0.30397926427440075,
+          "aircraft": "SUKHOI PAK FA T50"
+        },
+        {
+          "idx": 107,
+          "diffusion_info": 0.07632721870548524,
+          "convergence_info": 0.3168372786925212,
+          "aircraft": "F-15SE SILENT EAGLE"
+        },
+        {
+          "idx": 108,
+          "diffusion_info": 0.06613525601474529,
+          "convergence_info": 0.32849908203090433,
+          "aircraft": "CHENGDU J-20"
+        },
+        {
+          "idx": 109,
+          "diffusion_info": null,
+          "convergence_info": 0.26719410597680093,
+          "aircraft": "SHENYANG J-16"
+        }
+      ]
+    },
+    {
+      "name": "data_1",
+      "source": "data-ea7c5a4a6d40dd55bc8f13aafe9c1a3f",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"diffusion_info\"]) && isFinite(+datum[\"diffusion_info\"]) && isValid(datum[\"convergence_info\"]) && isFinite(+datum[\"convergence_info\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_2",
+      "source": "data-ea7c5a4a6d40dd55bc8f13aafe9c1a3f",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [],
+          "ops": ["q3", "q3"],
+          "fields": ["convergence_info", "diffusion_info"],
+          "as": ["q3_convergence_info", "q3_diffusion_info"]
+        }
+      ]
+    },
+    {
+      "name": "data_3",
+      "source": "data_2",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"q3_convergence_info\"]) && isFinite(+datum[\"q3_convergence_info\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_4",
+      "source": "data_2",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"q3_diffusion_info\"]) && isFinite(+datum[\"q3_diffusion_info\"])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_marks",
+      "type": "symbol",
+      "style": ["point"],
+      "from": {"data": "data_1"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 0.7},
+          "fill": {"value": "transparent"},
+          "stroke": {"value": "#4c78a8"},
+          "tooltip": {
+            "signal": "{\"aircraft\": isValid(datum[\"aircraft\"]) ? datum[\"aircraft\"] : \"\"+datum[\"aircraft\"], \"diffusion_info\": format(datum[\"diffusion_info\"], \"\"), \"convergence_info\": format(datum[\"convergence_info\"], \"\")}"
+          },
+          "ariaRoleDescription": {"value": "point"},
+          "description": {
+            "signal": "\"Average Diffusion Info (in bits): \" + (format(datum[\"diffusion_info\"], \"\")) + \"; Average Convergence Info (in bits): \" + (format(datum[\"convergence_info\"], \"\")) + \"; aircraft: \" + (isValid(datum[\"aircraft\"]) ? datum[\"aircraft\"] : \"\"+datum[\"aircraft\"]) + \"; diffusion_info: \" + (format(datum[\"diffusion_info\"], \"\")) + \"; convergence_info: \" + (format(datum[\"convergence_info\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "diffusion_info"},
+          "y": {"scale": "y", "field": "convergence_info"}
+        }
+      }
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "rule",
+      "style": ["rule"],
+      "from": {"data": "data_4"},
+      "encode": {
+        "update": {
+          "strokeDash": {"value": [5, 2]},
+          "stroke": {"value": "gray"},
+          "description": {
+            "signal": "\"Q3 of diffusion_info: \" + (format(datum[\"q3_diffusion_info\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "q3_diffusion_info"},
+          "y": {"value": 0},
+          "y2": {"field": {"group": "height"}}
+        }
+      }
+    },
+    {
+      "name": "layer_2_marks",
+      "type": "rule",
+      "style": ["rule"],
+      "from": {"data": "data_3"},
+      "encode": {
+        "update": {
+          "strokeDash": {"value": [5, 2]},
+          "stroke": {"value": "gray"},
+          "description": {
+            "signal": "\"Q3 of convergence_info: \" + (format(datum[\"q3_convergence_info\"], \"\"))"
+          },
+          "x": {"field": {"group": "width"}},
+          "x2": {"value": 0},
+          "y": {"scale": "y", "field": "q3_convergence_info"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "data_1", "field": "diffusion_info"},
+          {"data": "data_4", "field": "q3_diffusion_info"}
+        ]
+      },
+      "range": [0, {"signal": "width"}],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "data_1", "field": "convergence_info"},
+          {"data": "data_3", "field": "q3_convergence_info"}
+        ]
+      },
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "gridScale": "y",
+      "grid": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Average Diffusion Info (in bits)",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Average Convergence Info (in bits)",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ]
+}

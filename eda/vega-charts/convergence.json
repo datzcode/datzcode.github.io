@@ -1,0 +1,792 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "background": "white",
+  "padding": 5,
+  "height": 400,
+  "title": {"text": "Convergence", "frame": "group"},
+  "style": "cell",
+  "data": [
+    {
+      "name": "data-1e87b5fd44a71775679da5ec996bf110",
+      "values": [
+        {
+          "idx": 0,
+          "convergence_info": 0.10831603990299139,
+          "aircraft": "MACCHI C.202",
+          "year": 1940
+        },
+        {
+          "idx": 1,
+          "convergence_info": 0.07856144527040183,
+          "aircraft": "YAKOVLEK YAK-1",
+          "year": 1940
+        },
+        {
+          "idx": 2,
+          "convergence_info": 0.09950375224260527,
+          "aircraft": "P-51 MUSTANG",
+          "year": 1940
+        },
+        {
+          "idx": 3,
+          "convergence_info": 0.14725922550619255,
+          "aircraft": "FAIREY FULMAR",
+          "year": 1940
+        },
+        {
+          "idx": 4,
+          "convergence_info": 0.09177141441589258,
+          "aircraft": "CURTISS XP-46",
+          "year": 1941
+        },
+        {
+          "idx": 5,
+          "convergence_info": 0.06551564037871256,
+          "aircraft": "REGGIANE RE.2001",
+          "year": 1941
+        },
+        {
+          "idx": 6,
+          "convergence_info": 0.14288482057284757,
+          "aircraft": "MESSECHMITT ME262",
+          "year": 1942
+        },
+        {
+          "idx": 7,
+          "convergence_info": 0.09209411684916802,
+          "aircraft": "LAVOCHKIN La-5",
+          "year": 1942
+        },
+        {
+          "idx": 8,
+          "convergence_info": 0.11640551888838647,
+          "aircraft": "BELL P-63 KINGCOBRA",
+          "year": 1942
+        },
+        {
+          "idx": 9,
+          "convergence_info": 0.08698718922350517,
+          "aircraft": "CAC BOOMERANG",
+          "year": 1942
+        },
+        {
+          "idx": 10,
+          "convergence_info": 0.08664193981081048,
+          "aircraft": "NAKAJIMA Ki-84",
+          "year": 1943
+        },
+        {
+          "idx": 11,
+          "convergence_info": 0.18324528684394728,
+          "aircraft": "KAWASAKI KI-102",
+          "year": 1944
+        },
+        {
+          "idx": 12,
+          "convergence_info": 0.08488106666382493,
+          "aircraft": "GRUMMAN F8F BEARCAT",
+          "year": 1944
+        },
+        {
+          "idx": 13,
+          "convergence_info": 0.20674233952711105,
+          "aircraft": "MCDONNELL FH PHANTOM",
+          "year": 1945
+        },
+        {
+          "idx": 14,
+          "convergence_info": 0.12484445868606817,
+          "aircraft": "SUPREMARINE SEAFANG",
+          "year": 1946
+        },
+        {
+          "idx": 15,
+          "convergence_info": 0.2119220458124651,
+          "aircraft": "MiG-15",
+          "year": 1947
+        },
+        {
+          "idx": 16,
+          "convergence_info": 0.16082272913745968,
+          "aircraft": "BLACKBURN B-48 FIRECREST",
+          "year": 1947
+        },
+        {
+          "idx": 17,
+          "convergence_info": 0.17781958667681183,
+          "aircraft": "F-86 SABRE",
+          "year": 1947
+        },
+        {
+          "idx": 18,
+          "convergence_info": 0.15633743674007308,
+          "aircraft": "SAAB 29 TUNNAN",
+          "year": 1948
+        },
+        {
+          "idx": 19,
+          "convergence_info": 0.1442207097506855,
+          "aircraft": "DASSAULT MD450 OURAGAN",
+          "year": 1949
+        },
+        {
+          "idx": 20,
+          "convergence_info": 0.23623116811191364,
+          "aircraft": "MIKOYAN GUREVICH MiG-17",
+          "year": 1950
+        },
+        {
+          "idx": 21,
+          "convergence_info": 0.3422279652677953,
+          "aircraft": "HAWKER HUNTER",
+          "year": 1951
+        },
+        {
+          "idx": 22,
+          "convergence_info": 0.5356168782161949,
+          "aircraft": "DH.110 SEA VIXEN",
+          "year": 1951
+        },
+        {
+          "idx": 23,
+          "convergence_info": 0.43975355662445204,
+          "aircraft": "DOUGLAS F4D (F6)SKYRAY",
+          "year": 1951
+        },
+        {
+          "idx": 24,
+          "convergence_info": 0.1929641965367533,
+          "aircraft": "YAKOVLEV YAK-25",
+          "year": 1952
+        },
+        {
+          "idx": 25,
+          "convergence_info": 0.4442560158010067,
+          "aircraft": "CONVAIR F-102 DELTA DRAGGER",
+          "year": 1953
+        },
+        {
+          "idx": 26,
+          "convergence_info": 0.4297740696948834,
+          "aircraft": "ENGLISH ELECTRIC LIGHTING",
+          "year": 1954
+        },
+        {
+          "idx": 27,
+          "convergence_info": 0.2969502043425906,
+          "aircraft": "VOUGHT F-8 CRUSADER",
+          "year": 1955
+        },
+        {
+          "idx": 28,
+          "convergence_info": 0.5447970319967131,
+          "aircraft": "REPUBLIC F-105 THUNDERCHIEF",
+          "year": 1955
+        },
+        {
+          "idx": 29,
+          "convergence_info": 0.35416231821991556,
+          "aircraft": "FOLLAND GNAT",
+          "year": 1955
+        },
+        {
+          "idx": 30,
+          "convergence_info": 0.22730307181096632,
+          "aircraft": "DASSAULT SUPER MYSTÈRE",
+          "year": 1955
+        },
+        {
+          "idx": 31,
+          "convergence_info": 0.45807233307533574,
+          "aircraft": "SAAB 35 DRAKEN",
+          "year": 1955
+        },
+        {
+          "idx": 32,
+          "convergence_info": 0.4215518580622466,
+          "aircraft": "LOCKHEED F-104 STARFIGHTER",
+          "year": 1956
+        },
+        {
+          "idx": 33,
+          "convergence_info": 0.19272975213160423,
+          "aircraft": "FIAT G.91",
+          "year": 1956
+        },
+        {
+          "idx": 34,
+          "convergence_info": 0.35069403512608377,
+          "aircraft": "MiG-21",
+          "year": 1956
+        },
+        {
+          "idx": 35,
+          "convergence_info": 0.3501504525601116,
+          "aircraft": "SAUNDERS ROE SR53",
+          "year": 1957
+        },
+        {
+          "idx": 36,
+          "convergence_info": 0.26238502124853386,
+          "aircraft": "YAK-28",
+          "year": 1958
+        },
+        {
+          "idx": 37,
+          "convergence_info": 0.3834476074989335,
+          "aircraft": "SUKHOI SU-11",
+          "year": 1958
+        },
+        {
+          "idx": 38,
+          "convergence_info": 0.47615740884889135,
+          "aircraft": "MCDONNELL DOUGLASS F4 PHANTOM II",
+          "year": 1958
+        },
+        {
+          "idx": 39,
+          "convergence_info": 0.5952110962131819,
+          "aircraft": "AVRO CANADA CF-105 ARROW",
+          "year": 1958
+        },
+        {
+          "idx": 40,
+          "convergence_info": 0.30333939073334704,
+          "aircraft": "NORTHROP F-5",
+          "year": 1959
+        },
+        {
+          "idx": 41,
+          "convergence_info": 0.6380498635012534,
+          "aircraft": "TUPOLEV TU-28",
+          "year": 1961
+        },
+        {
+          "idx": 42,
+          "convergence_info": 0.2760368450627411,
+          "aircraft": "HAL HF-24 MARUT",
+          "year": 1961
+        },
+        {
+          "idx": 43,
+          "convergence_info": 0.4147339992036135,
+          "aircraft": "SUKHOI SU-15",
+          "year": 1962
+        },
+        {
+          "idx": 44,
+          "convergence_info": 0.5885294407081876,
+          "aircraft": "LOCKHEED YF-12",
+          "year": 1963
+        },
+        {
+          "idx": 45,
+          "convergence_info": 0.539691856230229,
+          "aircraft": "MiG-25",
+          "year": 1964
+        },
+        {
+          "idx": 46,
+          "convergence_info": 0.517288504695034,
+          "aircraft": "HELWAN HA-300",
+          "year": 1964
+        },
+        {
+          "idx": 47,
+          "convergence_info": 0.4978502735865837,
+          "aircraft": "F-111B",
+          "year": 1965
+        },
+        {
+          "idx": 48,
+          "convergence_info": 0.2583342008877592,
+          "aircraft": "FIAT G.91Y",
+          "year": 1966
+        },
+        {
+          "idx": 49,
+          "convergence_info": 0.3294447912413029,
+          "aircraft": "DASSAULT MIRAGE F1",
+          "year": 1966
+        },
+        {
+          "idx": 50,
+          "convergence_info": 0.32033037926854446,
+          "aircraft": "SAAB JA37 VIGGEN",
+          "year": 1967
+        },
+        {
+          "idx": 51,
+          "convergence_info": 0.3577622483282574,
+          "aircraft": "MiG-23",
+          "year": 1967
+        },
+        {
+          "idx": 52,
+          "convergence_info": 0.35577241832883655,
+          "aircraft": "HARRIER GR3",
+          "year": 1967
+        },
+        {
+          "idx": 53,
+          "convergence_info": 0.27974063025532975,
+          "aircraft": "CANADAIR CF-5 FREEDOM FIGHTER (CF-116)",
+          "year": 1968
+        },
+        {
+          "idx": 54,
+          "convergence_info": 0.41441808776274863,
+          "aircraft": "SHENYANG J-8",
+          "year": 1969
+        },
+        {
+          "idx": 55,
+          "convergence_info": 0.45402247439913357,
+          "aircraft": "NANCHANG J-12",
+          "year": 1970
+        },
+        {
+          "idx": 56,
+          "convergence_info": 0.5180858547942243,
+          "aircraft": "F-14 TOMCAT",
+          "year": 1970
+        },
+        {
+          "idx": 57,
+          "convergence_info": 0.4055191594327161,
+          "aircraft": "YAKOVLEV YAK-38",
+          "year": 1971
+        },
+        {
+          "idx": 58,
+          "convergence_info": 0.4492235768878909,
+          "aircraft": "F-15 EAGLE",
+          "year": 1972
+        },
+        {
+          "idx": 59,
+          "convergence_info": 0.32098652531328625,
+          "aircraft": "IAI KFIR",
+          "year": 1973
+        },
+        {
+          "idx": 60,
+          "convergence_info": 0.358146281535657,
+          "aircraft": "F-16 FIGHTING FALCON",
+          "year": 1974
+        },
+        {
+          "idx": 61,
+          "convergence_info": 0.4069934675707194,
+          "aircraft": "NORTHROP YF-17",
+          "year": 1974
+        },
+        {
+          "idx": 62,
+          "convergence_info": 0.22845108708059325,
+          "aircraft": "DASSAULT-BREGUET SUPER ÉTENDARD",
+          "year": 1974
+        },
+        {
+          "idx": 63,
+          "convergence_info": 0.4960219178649778,
+          "aircraft": "MIG-31",
+          "year": 1975
+        },
+        {
+          "idx": 64,
+          "convergence_info": 0.25770968526179283,
+          "aircraft": "MITSUBISHI F-1",
+          "year": 1975
+        },
+        {
+          "idx": 65,
+          "convergence_info": 0.359352433582299,
+          "aircraft": "HAL AJEET",
+          "year": 1976
+        },
+        {
+          "idx": 66,
+          "convergence_info": 0.3095624838629994,
+          "aircraft": "MIG-29",
+          "year": 1977
+        },
+        {
+          "idx": 67,
+          "convergence_info": 0.3647186583283053,
+          "aircraft": "SUKHOI SU-27",
+          "year": 1977
+        },
+        {
+          "idx": 68,
+          "convergence_info": 0.3562063712647383,
+          "aircraft": "F/A-18 HORNET",
+          "year": 1978
+        },
+        {
+          "idx": 69,
+          "convergence_info": 0.29494143758904084,
+          "aircraft": "SEA HARRIER",
+          "year": 1978
+        },
+        {
+          "idx": 70,
+          "convergence_info": 0.3025221488905782,
+          "aircraft": "DASSAULT MIRAGE 2000",
+          "year": 1978
+        },
+        {
+          "idx": 71,
+          "convergence_info": 0.3711216929467943,
+          "aircraft": "CF-18 HORNET",
+          "year": 1978
+        },
+        {
+          "idx": 72,
+          "convergence_info": 0.36661213187885655,
+          "aircraft": "PANAVIA TORNADO",
+          "year": 1979
+        },
+        {
+          "idx": 73,
+          "convergence_info": 0.38778524976213113,
+          "aircraft": "MISTUBISHI F-15J",
+          "year": 1980
+        },
+        {
+          "idx": 74,
+          "convergence_info": 0.35451991900468677,
+          "aircraft": "F-20 TIGERSHARK",
+          "year": 1982
+        },
+        {
+          "idx": 75,
+          "convergence_info": 0.3278536904793463,
+          "aircraft": "F-16XL",
+          "year": 1982
+        },
+        {
+          "idx": 76,
+          "convergence_info": 0.26019865448304924,
+          "aircraft": "MIG-29M",
+          "year": 1984
+        },
+        {
+          "idx": 77,
+          "convergence_info": 0.3681882639461793,
+          "aircraft": "BRITISH AEROSPACE HARRIER  II",
+          "year": 1985
+        },
+        {
+          "idx": 78,
+          "convergence_info": 0.29837577179520075,
+          "aircraft": "IAI LAVI",
+          "year": 1986
+        },
+        {
+          "idx": 79,
+          "convergence_info": 0.37821968925795735,
+          "aircraft": "F-15E STRIKE EAGLE",
+          "year": 1986
+        },
+        {
+          "idx": 80,
+          "convergence_info": 0.3186061007241075,
+          "aircraft": "DASSAULT RAFALE",
+          "year": 1986
+        },
+        {
+          "idx": 81,
+          "convergence_info": 0.30731012666902613,
+          "aircraft": "ATLAS CHEETAH",
+          "year": 1986
+        },
+        {
+          "idx": 82,
+          "convergence_info": 0.3095704183535823,
+          "aircraft": "YAKOVLEV YAK-141",
+          "year": 1987
+        },
+        {
+          "idx": 83,
+          "convergence_info": 0.3534591926721978,
+          "aircraft": "SUKHOI SU-33",
+          "year": 1987
+        },
+        {
+          "idx": 84,
+          "convergence_info": 0.24987372659746418,
+          "aircraft": "MIG-29K",
+          "year": 1988
+        },
+        {
+          "idx": 85,
+          "convergence_info": 0.3023389820961848,
+          "aircraft": "SAAB JAS 39 GRIPEN",
+          "year": 1988
+        },
+        {
+          "idx": 86,
+          "convergence_info": 0.33194205429014895,
+          "aircraft": "XIAN JH-7",
+          "year": 1988
+        },
+        {
+          "idx": 87,
+          "convergence_info": 0.30463877553216995,
+          "aircraft": "SUKHOI SU-30",
+          "year": 1989
+        },
+        {
+          "idx": 88,
+          "convergence_info": 0.3201789615875687,
+          "aircraft": "AIDC F-CK-1 CHING-KUO",
+          "year": 1989
+        },
+        {
+          "idx": 89,
+          "convergence_info": 0.37463451133414377,
+          "aircraft": "YF-22",
+          "year": 1990
+        },
+        {
+          "idx": 90,
+          "convergence_info": 0.2921623257270226,
+          "aircraft": "EUROFIGHTER TYPHOON",
+          "year": 1994
+        },
+        {
+          "idx": 91,
+          "convergence_info": 0.3396169116041284,
+          "aircraft": "F/A-18E/F SUPER HORNET",
+          "year": 1995
+        },
+        {
+          "idx": 92,
+          "convergence_info": 0.2526259794578319,
+          "aircraft": "MITSUBISHI F-2",
+          "year": 1995
+        },
+        {
+          "idx": 93,
+          "convergence_info": 0.33327619401844194,
+          "aircraft": "SUKHOI SU-37",
+          "year": 1996
+        },
+        {
+          "idx": 94,
+          "convergence_info": 0.37966593489060674,
+          "aircraft": "F-22 RAPTOR",
+          "year": 1997
+        },
+        {
+          "idx": 95,
+          "convergence_info": 0.36330217624906397,
+          "aircraft": "SUKHOI SU-47",
+          "year": 1997
+        },
+        {
+          "idx": 96,
+          "convergence_info": 0.23258361076369793,
+          "aircraft": "AERO L-159 ALCA",
+          "year": 1997
+        },
+        {
+          "idx": 97,
+          "convergence_info": 0.30552242938405716,
+          "aircraft": "SUKHOI SU-30MKI",
+          "year": 1997
+        },
+        {
+          "idx": 98,
+          "convergence_info": 0.292425231677404,
+          "aircraft": "CHENGDU J-10",
+          "year": 1998
+        },
+        {
+          "idx": 99,
+          "convergence_info": 0.28559474491615316,
+          "aircraft": "SHENYANG J-11",
+          "year": 1998
+        },
+        {
+          "idx": 100,
+          "convergence_info": 0.2899415322391651,
+          "aircraft": "HAL TEJAS",
+          "year": 2001
+        },
+        {
+          "idx": 101,
+          "convergence_info": 0.2631146196401024,
+          "aircraft": "PAC JF-17 THUNDER",
+          "year": 2003
+        },
+        {
+          "idx": 102,
+          "convergence_info": 0.3342701373573562,
+          "aircraft": "F-35 LIGHTNING II",
+          "year": 2006
+        },
+        {
+          "idx": 103,
+          "convergence_info": 0.24437957099660676,
+          "aircraft": "MIG-35",
+          "year": 2007
+        },
+        {
+          "idx": 104,
+          "convergence_info": 0.30681573493916686,
+          "aircraft": "SUKHOI SU-35",
+          "year": 2008
+        },
+        {
+          "idx": 105,
+          "convergence_info": 0.24732357144273548,
+          "aircraft": "SHENYANG J-15",
+          "year": 2009
+        },
+        {
+          "idx": 106,
+          "convergence_info": 0.30397926427440075,
+          "aircraft": "SUKHOI PAK FA T50",
+          "year": 2010
+        },
+        {
+          "idx": 107,
+          "convergence_info": 0.3168372786925212,
+          "aircraft": "F-15SE SILENT EAGLE",
+          "year": 2010
+        },
+        {
+          "idx": 108,
+          "convergence_info": 0.32849908203090433,
+          "aircraft": "CHENGDU J-20",
+          "year": 2011
+        },
+        {
+          "idx": 109,
+          "convergence_info": 0.26719410597680093,
+          "aircraft": "SHENYANG J-16",
+          "year": 2012
+        }
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "data-1e87b5fd44a71775679da5ec996bf110",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"year\"]) && isFinite(+datum[\"year\"]) && isValid(datum[\"convergence_info\"]) && isFinite(+datum[\"convergence_info\"])"
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "width",
+      "init": "isFinite(containerSize()[0]) ? containerSize()[0] : 300",
+      "on": [
+        {
+          "update": "isFinite(containerSize()[0]) ? containerSize()[0] : 300",
+          "events": "window:resize"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "symbol",
+      "style": ["point"],
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 0.7},
+          "fill": {"value": "transparent"},
+          "stroke": {"value": "#4c78a8"},
+          "tooltip": {
+            "signal": "{\"aircraft\": isValid(datum[\"aircraft\"]) ? datum[\"aircraft\"] : \"\"+datum[\"aircraft\"], \"convergence_info\": format(datum[\"convergence_info\"], \"\")}"
+          },
+          "ariaRoleDescription": {"value": "point"},
+          "description": {
+            "signal": "\"Year: \" + (format(datum[\"year\"], \"d\")) + \"; Average Info (in bits): \" + (format(datum[\"convergence_info\"], \"\")) + \"; aircraft: \" + (isValid(datum[\"aircraft\"]) ? datum[\"aircraft\"] : \"\"+datum[\"aircraft\"]) + \"; convergence_info: \" + (format(datum[\"convergence_info\"], \"\"))"
+          },
+          "x": {"scale": "x", "field": "year"},
+          "y": {"scale": "y", "field": "convergence_info"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {"data": "data_0", "field": "year"},
+      "range": [0, {"signal": "width"}],
+      "zero": false,
+      "nice": true
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {"data": "data_0", "field": "convergence_info"},
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "gridScale": "y",
+      "grid": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "tickMinStep": 1,
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Year",
+      "format": "d",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/40)"},
+      "tickMinStep": 1,
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Average Info (in bits)",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WW2 Fighters Sample Report</title>
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@5"></script>
+        <style>
+            .chart-wrapper {
+                width: 90vw;
+                overflow-x: scroll;
+                margin: 0 auto;
+                padding: 0 2%;
+            }
+            .embedded-chart {
+                margin: 0 auto;
+            }
+
+            #info-chart {
+                box-sizing: border-box;
+                min-width: 100rem;
+                max-width: 100%;
+            }
+            #diff-chart, #conv-chart {
+                box-sizing: border-box;
+                min-width: 80rem;
+                max-width: 100%;
+            }
+            #diffconv-chart {
+                box-sizing: border-box;
+                min-width: 80rem;
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="chart-wrapper">
+        <div class="embedded-chart" id="info-chart"></div>
+    </div>
+    <div class="chart-wrapper">
+        <div class="embedded-chart" id="diff-chart"></div>
+    </div>
+    <div class="chart-wrapper">
+        <div class="embedded-chart" id="conv-chart"></div>
+    </div>
+    <div class="chart-wrapper">
+        <div class="embedded-chart" id="diffconv-chart"></div>
+    </div>
+    <div class="chart-wrapper">
+        <div class="embedded-chart" id="infomatrix-chart"></div>
+    </div>
+
+    <script type="text/javascript">
+      vegaEmbed('#info-chart', './vega-charts/pairwise-information.json', {renderer: "svg"})
+        .catch(console.error);
+      vegaEmbed('#diff-chart', './vega-charts/diffusion.json', {renderer: "svg"})
+        .catch(console.error);
+      vegaEmbed('#conv-chart', 'vega-charts/convergence.json', {renderer: "svg"})
+        .catch(console.error);
+      vegaEmbed('#diffconv-chart', './vega-charts/diff-conv.json', {renderer: "svg"})
+        .catch(console.error);
+      vegaEmbed('#infomatrix-chart', './vega-charts/info-matrix.json', {renderer: "svg"})
+        .catch(console.error);
+    </script>
+  </body>
+</html>
